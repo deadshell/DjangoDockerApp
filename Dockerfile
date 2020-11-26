@@ -9,4 +9,4 @@ COPY . /opt/services/django/src
 
 EXPOSE 8000
 
-CMD ["gunicorn", "--chdir", "app", "--bind", ":8000", "testapp.wsgi:application"]
+CMD ["gunicorn", "--chdir", "testapp", "--bind", ":8000", "testapp.wsgi:application"]

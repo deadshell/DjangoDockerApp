@@ -4,7 +4,10 @@ services:
     container_name: djangoapp
     image: djangoapp
     environment: 
-      - DJANGO_SECRET_KEY='(ty*(f_keh$g$7xeaz++obkvc2oasl2pof&2&+*^6i@f2xwu)a'
+      - DJANGO_SECRET_KEY=KEY_HERE
       - DEBUG=True
+      - DJANGO_ALLOWED_HOSTS=YOUR_HOST
+    volumes:
+      - ./app:/opt/services/djangoapp/src
     ports:
       - 8000:8000
