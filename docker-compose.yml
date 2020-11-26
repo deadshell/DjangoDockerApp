@@ -1,0 +1,10 @@
+version: '2.1'
+services:
+  djangoapp:
+    container_name: djangoapp
+    image: djangoapp
+    environment: 
+      - DJANGO_SECRET_KEY='(ty*(f_keh$g$7xeaz++obkvc2oasl2pof&2&+*^6i@f2xwu)a'
+      - DEBUG=True
+    ports:
+      - 8000:8000
